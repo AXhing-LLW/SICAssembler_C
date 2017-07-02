@@ -1,3 +1,14 @@
+
+// Version II
+// 功能: 1.  可以讀入一個外部檔案, 並將其一行一行輸出至螢幕及檔案 "Output.obj" 之中
+//       2.  將每一行之字串 line, 切成塊狀, 並儲存至字串陣列 statement_part[i][j][] 之中
+//              i : 程式中的第i行    j: 第j塊 (空白捨去)
+//  Example: 第4行程式碼為 "LOOP  STA     TABLE,X"  則 
+//              statement_part[4][1]="LOOP"    (L O O P \0)    
+//              statement_part[4][2]="STA"    
+//              statement_part[4][3]="TABLE,X"    
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
